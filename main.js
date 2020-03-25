@@ -1,6 +1,42 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const isOdd = (n) => {
+  return n%2 !== 0
+}
+const onlyOdds = (a) => {
+  return a.filter(isOdd)
+}
+const isEven = (n) => {
+  return n%2 === 0
+}
+const onlyEvens = (a) => {
+  return a.filter(isEven)
+}
+const isShort = (s) => {
+  return s.length < 7
+}
+const shortNamesOnly = (a) => {
+  return a.filter(isShort)
+}
+const isDName = (s) =>{
+  return s.startsWith('D')
+}
+const dNames = (a) => {
+  return a.filter(isDName);
+};
+const containsLowercase = (s) => {
+  return !s.includes(s.toUpperCase())
+}
+const removeTrolls = (a) => {
+  return a.filter(containsLowercase)
+}
+const isTriStateArea = (s) => {
+  return (s.includes('NY')||s.includes('NJ')||s.includes('CT'))
+}
+const triStateAreaOnly = (a) => {
+  return a.filter(isTriStateArea)
+}
 
 
 
